@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    app:rb_color [color def:@android:color/holo_blue_dark] &ndash;&gt; Color of the ripple-->
+<!--    app:rb_radius [dimension def:64dp ] &ndash;&gt; Radius of the ripple-->
+<!--    app:rb_duration [integer def:3000 ] &ndash;&gt; Duration of one ripple animation (millisecond)-->
+<!--    app:rb_rippleAmount [integer def:6] &ndash;&gt; Max amount of ripples at one screen-->
+<!--    app:rb_scale [interger def:6] &ndash;&gt; Scale of ripple at the end of one animation cycle-->
+<!--    app:rb_type [enum (fillRipple, strokeRipple) def:fillRipple] &ndash;&gt; Filled circle or ring-->
+<!--    app:rb_strokeWidth [dimension def:2dp] &ndash;&gt; Stroke width of the ripple, ONLY work when rb_type="strokeRipple"-->
+
+    <declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color" />
+        <attr name="rb_strokeWidth" format="dimension"/>
+        <attr name="rb_radius" format="dimension"/>
+        <attr name="rb_duration" format="integer"/>
+        <attr name="rb_rippleAmount" format="integer"/>
+        <attr name="rb_scale" format="float"/>
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0"/>
+            <enum name="strokeRipple" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>
